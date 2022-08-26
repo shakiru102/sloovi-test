@@ -1,5 +1,4 @@
 import moment from "moment";
-import { FC, useEffect } from "react"
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
 import { MdModeEdit } from 'react-icons/md'
@@ -28,7 +27,6 @@ const Task = (data: any) => {
    }
   }
   
-  if(userList == null) return <div></div>
 
   return (
     <div className="flex p-3 ">

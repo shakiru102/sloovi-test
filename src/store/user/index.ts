@@ -16,7 +16,7 @@ interface initalStateProps {
 
 const initialState: initalStateProps = {
     user: null,
-    userList: [],
+    userList: null,
     task_date: '',
     task_description: '',
     task_time: '',

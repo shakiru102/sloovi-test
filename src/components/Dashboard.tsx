@@ -10,7 +10,7 @@ import Task from './Task'
 
 const Dashboard = () => {
 
-  const { user, allTask, cardShown } = useSelector((state: RootState) => state.user )
+  const { user, allTask, cardShown, userList } = useSelector((state: RootState) => state.user )
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Dashboard = () => {
    }
   }, [ user ])
    
-  if(!user) return <div>Loading....</div>
+  if(!userList) return <div>Loading....</div>
 
   return (
     <div className='h-[100vh] flex'>
