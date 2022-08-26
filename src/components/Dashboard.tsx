@@ -29,7 +29,7 @@ const Dashboard = () => {
    }
   }, [ user ])
    
-  if(!userList) return <div>Loading....</div>
+  if(!user || !userList) return <div>Loading....</div>
 
   return (
     <div className='h-[100vh] flex'>
