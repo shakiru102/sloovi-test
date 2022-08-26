@@ -7,7 +7,7 @@ import { getSingleTask } from "../api";
 import { useDispatch } from "react-redux";
 import { setCard, setUpdateTask } from "../store/user";
 
-const Task: FC = (data) => {
+const Task = (data: any) => {
   // console.log(data);
   
 
@@ -28,6 +28,8 @@ const Task: FC = (data) => {
    }
   }
   
+  if(userList == null) return
+
   return (
     <div className="flex p-3 ">
       <div className=" flex items-center flex-1 gap-2">
